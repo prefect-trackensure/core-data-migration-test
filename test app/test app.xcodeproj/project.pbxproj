@@ -14,8 +14,8 @@
 		FA4D2555290ACA0500C5484C /* test_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA4D2553290ACA0500C5484C /* test_app.xcdatamodeld */; };
 		FA4D2557290ACA0A00C5484C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4D2556290ACA0A00C5484C /* Assets.xcassets */; };
 		FA4D255A290ACA0A00C5484C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4D2558290ACA0A00C5484C /* LaunchScreen.storyboard */; };
-		FA96E541290ADB90004EC58C /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E53F290ADB90004EC58C /* Item+CoreDataClass.swift */; };
-		FA96E542290ADB90004EC58C /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E540290ADB90004EC58C /* Item+CoreDataProperties.swift */; };
+		FA96E546290AE3E7004EC58C /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E544290AE3E7004EC58C /* Item+CoreDataClass.swift */; };
+		FA96E547290AE3E7004EC58C /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E545290AE3E7004EC58C /* Item+CoreDataProperties.swift */; };
 		FA9FB8D9290AD1B8009213F8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FB8D8290AD1B8009213F8 /* ListViewController.swift */; };
 		FA9FB8DC290AD2C0009213F8 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9FB8DA290AD2C0009213F8 /* ListTableViewCell.swift */; };
 		FA9FB8DD290AD2C0009213F8 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9FB8DB290AD2C0009213F8 /* ListTableViewCell.xib */; };
@@ -31,8 +31,9 @@
 		FA4D2556290ACA0A00C5484C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA4D2559290ACA0A00C5484C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA4D255B290ACA0A00C5484C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA96E53F290ADB90004EC58C /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FA96E540290ADB90004EC58C /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA96E543290AE3B9004EC58C /* test_app 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "test_app 2.xcdatamodel"; sourceTree = "<group>"; };
+		FA96E544290AE3E7004EC58C /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA96E545290AE3E7004EC58C /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FA9FB8D8290AD1B8009213F8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FA9FB8DA290AD2C0009213F8 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		FA9FB8DB290AD2C0009213F8 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
@@ -127,8 +128,8 @@
 		FA9FB8E3290AD651009213F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA96E540290ADB90004EC58C /* Item+CoreDataProperties.swift */,
-				FA96E53F290ADB90004EC58C /* Item+CoreDataClass.swift */,
+				FA96E544290AE3E7004EC58C /* Item+CoreDataClass.swift */,
+				FA96E545290AE3E7004EC58C /* Item+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,12 +208,12 @@
 			files = (
 				FA4D254F290ACA0500C5484C /* ViewController.swift in Sources */,
 				FA4D2555290ACA0500C5484C /* test_app.xcdatamodeld in Sources */,
-				FA96E542290ADB90004EC58C /* Item+CoreDataProperties.swift in Sources */,
+				FA96E546290AE3E7004EC58C /* Item+CoreDataClass.swift in Sources */,
+				FA96E547290AE3E7004EC58C /* Item+CoreDataProperties.swift in Sources */,
 				FA4D254B290ACA0500C5484C /* AppDelegate.swift in Sources */,
 				FA9FB8D9290AD1B8009213F8 /* ListViewController.swift in Sources */,
 				FA4D254D290ACA0500C5484C /* SceneDelegate.swift in Sources */,
 				FA9FB8DC290AD2C0009213F8 /* ListTableViewCell.swift in Sources */,
-				FA96E541290ADB90004EC58C /* Item+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,9 +438,10 @@
 		FA4D2553290ACA0500C5484C /* test_app.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				FA96E543290AE3B9004EC58C /* test_app 2.xcdatamodel */,
 				FA4D2554290ACA0500C5484C /* test_app.xcdatamodel */,
 			);
-			currentVersion = FA4D2554290ACA0500C5484C /* test_app.xcdatamodel */;
+			currentVersion = FA96E543290AE3B9004EC58C /* test_app 2.xcdatamodel */;
 			path = test_app.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

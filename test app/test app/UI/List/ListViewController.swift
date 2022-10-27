@@ -21,7 +21,12 @@ class ListViewController: UIViewController {
     tableView.delegate = self
     tableView.rowHeight = 50
     tableView.separatorStyle = .none
+    tableView.allowsSelection = false
     tableView.register(UINib(nibName: "ListTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "ListTableViewCell")
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     fetchItems()
   }
   
@@ -42,11 +47,13 @@ class ListViewController: UIViewController {
 
 extension ListViewController: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    items?.count ?? 0
+    (items?.count ?? 0) + 1
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     if let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell") as? ListTableViewCell, let items {
+      print(indexPath.row)
+      cell.backgroundColor = .white
       if indexPath.row == 0 {
         cell.backgroundColor = .gray
         cell.idLabel.text = "Id"
@@ -56,7 +63,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
         let index = indexPath.row - 1
         cell.idLabel.text = items[index].id.description
         cell.nameLabel.text = items[index].name
-        // TODO desc
+        cell.descLabel.text = items[index].desc
       }
       return cell
     } else {

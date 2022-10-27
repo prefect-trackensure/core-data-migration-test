@@ -117,6 +117,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6xx-SA-abY"/>
                     <connections>
+                        <outlet property="descLabel" destination="g6e-56-k6T" id="Z2T-P0-3JN"/>
                         <outlet property="descTextField" destination="5Mx-bu-F9O" id="Rmo-CN-fKa"/>
                         <outlet property="idLabel" destination="sOG-yf-ZVz" id="5Vd-HP-u14"/>
                         <outlet property="idTextField" destination="d42-es-XST" id="nTL-CW-9Ji"/>
